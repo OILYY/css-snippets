@@ -1,19 +1,23 @@
-#account-status-picker--online {
-    --brand-experiment-560: var(--green-360);
+#account-status-picker--online[class*=focused],
+#account-status-picker[class*=focused]:has([mask="url(#svg-mask-status-online)"]) {
+    background-color: var(--green-360);
 }
-#account-status-picker--dnd {
-    --brand-experiment-560: var(--red-400);
+#account-status-picker--dnd[class*=focused],
+#account-status-picker[class*=focused]:has([mask="url(#svg-mask-status-dnd)"]) {
+    background-color: var(--red-400);
 }
-#account-status-picker--idle {
-    --brand-experiment-560: var(--yellow-330);
+#account-status-picker--idle[class*=focused],
+#account-status-picker[class*=focused]:has([mask="url(#svg-mask-status-idle)"]) {
+    background-color: var(--yellow-330);
 }
-#account-status-picker--invisible {
-    --brand-experiment-560: var(--primary-400);
+#account-status-picker--invisible[class*=focused],
+#account-status-picker[class*=focused]:has([mask="url(#svg-mask-status-invisible)"]) {
+    background-color: var(--primary-400);
 }
-#account .submenu_acf564 .separator__18122 {
+#account .submenu_d90b3d .separator_d90b3d {
     display: none;
 }
-#account .submenu_acf564 .description_ea6680 {
+#account .submenu_d90b3d .description_ad5fac {
     height: fit-content;
     overflow: hidden;
     max-height: 0rem;
@@ -22,23 +26,23 @@
     flex: 0 0 100%;
     display: flex;
 }
-#account .submenu_acf564 .item__183e8.focused__27621 .description_ea6680 {
+#account .submenu_d90b3d .item_d90b3d.focused_d90b3d .description_ad5fac {
     max-height: 4rem;
 }
-.statusItem__72404 {
+.statusItem_ad5fac {
     display: flex;
     flex-wrap: wrap;
 }
-.statusItem__72404 .icon__37f95 {
+.statusItem_ad5fac .icon_ad5fac {
     margin-right: 10px;
     flex: 0 0 10px;
 }
-.status__8c19b {
+.status_ad5fac {
     width: calc(100% - 20px);
     display: flex;
 }
-#account-status-picker--idle .statusItem__72404::after {
-    content: "Active but idle/away.";
+#account-status-picker--idle .statusItem_ad5fac::after {
+    content: "Away from Discord/PC.";
     height: fit-content;
     overflow: hidden;
     max-height: 0rem;
@@ -47,6 +51,6 @@
     flex: 0 0 100%;
     display: flex;
 }
-#account-status-picker--idle.focused__27621 .statusItem__72404::after {
+#account-status-picker--idle.focused_d90b3d .statusItem_ad5fac::after {
     max-height: 4rem;
 }
